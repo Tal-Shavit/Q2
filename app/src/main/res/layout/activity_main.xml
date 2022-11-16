@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="2"
+       android:orientation="vertical"
+       android:background="@color/lightPurple">
+
+       <EditText
+           android:id="@+id/main_TXT_name"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:hint="type your name here"
+           android:textStyle="bold"
+           android:textSize="20sp"
+           android:textColorHint="@color/black"
+           android:backgroundTint="@color/ocean"
+           android:layout_marginTop="170dp"
+           android:layout_gravity="center_horizontal"
+           android:inputType="textPersonName|textCapWords">
+
+       </EditText>
+
+       <EditText
+           android:id="@+id/main_TXT_salary"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:hint="type your salary here"
+           android:textStyle="bold"
+           android:textSize="20sp"
+           android:textColorHint="@color/black"
+           android:backgroundTint="@color/ocean"
+           android:layout_marginTop="10dp"
+           android:layout_gravity="center_horizontal"
+           >
+
+       </EditText>
+
+       <com.google.android.material.button.MaterialButton
+           android:id="@+id/main_BTN_OK"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center_horizontal"
+           android:layout_marginTop="70dp"
+           android:backgroundTint="@color/lightPurple2"
+           android:textColor="@color/purple_500"
+           android:textSize="20sp"
+           android:textStyle="bold"
+           android:text="OK" />
+
+
+   </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/lightPurple2"
+        android:orientation="vertical">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/main_TXT_inputName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold|italic" />
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/main_TXT_inputSalary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold|italic" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
